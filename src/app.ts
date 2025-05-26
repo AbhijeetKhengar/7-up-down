@@ -35,10 +35,10 @@ class App {
   // Modified/New Code
   private initializeCore() {
     // Initialize encryption only if enabled
-    if (!process.env.TERIFF || !process.env.PLAN) {
+    if (!process.env.KEY || !process.env.IV) {
       logger.warn("Missing encryption configuration");
     } else {
-      initializeEncryption(process.env.TERIFF, process.env.PLAN);
+      initializeEncryption(process.env.KEY, process.env.IV);
       logger.info("Encryption initialized successfully");
     }
 

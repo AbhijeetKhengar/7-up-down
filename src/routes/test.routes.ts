@@ -1,4 +1,4 @@
-import { decrypt, dynamicDecrypt, dynamicEncrypt, encrypt } from 'crypt-vault';
+import { decrypt, dynamicDecrypt, encrypt } from 'crypt-vault';
 import { Express, Router } from 'express';
 
 export function initRoutes(app: Express, router: Router) {

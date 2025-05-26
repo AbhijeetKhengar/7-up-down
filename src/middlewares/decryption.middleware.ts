@@ -1,4 +1,3 @@
-// File: src\middlewares\decryption.middleware.ts
 import { Request, Response, NextFunction } from 'express';
 import { decrypt } from 'crypt-vault';
 import { ENCRYPTION_ENABLED } from '../app';

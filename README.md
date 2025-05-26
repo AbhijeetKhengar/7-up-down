@@ -33,5 +33,66 @@ In **7 Up Down**, two dice are rolled, and players bet on the outcome of the tot
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/7-up-down.git
+git clone https://github.com/AbhijeetKhengar/7-up-down.git
 cd 7-up-down
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Configure Environment Variables
+
+Create one of the following files based on your environment:
+
+- `.env.local` – for local development
+- `.env.development` – for development environment
+- `.env.production` – for production environment
+
+#### Example `.env` Configuration
+
+```env
+# Server Configuration
+PORT=3000
+NODE_ENV=local  # or development, production
+
+# Database Configuration
+DB_DRIVER=mysql  # or postgres
+DB_USERNAME=root
+DB_PASSWORD=password
+DB_NAME=7updown
+HOST=localhost
+DB_PORT=3306  # 3306 for MySQL, 5432 for PostgreSQL
+
+# Sync Options
+DB_SYNC_ALTER=true  # Use with caution
+DB_SYNC_FORCE=false  # DANGER: This will drop tables!
+
+# Logging
+SQL_LOGGING=false
+
+# Encryption
+ENCRYPTION=true
+KEY=1cUYmFcGr1dgoPOEGqkrLDS7XvydoJ4t
+IV=FSqFKHJBBqGwlKJM
+```
+
+### 4. Start the Application
+
+Before running, ensure dependencies are installed:
+
+```bash
+yarn install
+# or
+npm install
+```
+
+### 5. Run the Application
+
+```bash
+yarn run local
+```

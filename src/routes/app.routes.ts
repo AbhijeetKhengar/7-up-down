@@ -1,4 +1,3 @@
-// File: src\routes\app.routes.ts
 import express, { Application, Router, Express } from 'express';
 import * as userRoutes from './User';
 import * as betRoutes from './Bet';
