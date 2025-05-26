@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "80f8e01c-b7d5-4a02-8741-f2d0a90f2f56",
+		"name": "7-up-down",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40966045"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "abc@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/user/login",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "abc@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/user/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "614"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"266-s8Tteam2k7WEFYZ8TgSg0buGY38\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 May 2025 18:08:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"code\": 200,\n    \"message\": \"User logged in successfully!\",\n    \"data\": {\n        \"id\": 5,\n        \"email\": \"abc@gmail.com\",\n        \"updated_at\": \"2025-05-26T18:08:38.392Z\",\n        \"created_at\": \"2025-05-26T18:08:38.392Z\",\n        \"wallet\": {\n            \"balance\": \"500.00\"\n        },\n        \"token\": \"G6gJpchIbhAXG9TlHc/xlJ94sSM4Xj4o9rhPVBXGgYXbP1wvM8R8vKyK2r8IttIpS7Ryr8G/k+HC9C/KxcTR+QNer56+K5SSc21L5Os06gFH3XIT4Bo7QNKduz/8PSz4l9yuvcdpejjHP8Ue+D8Se9Vg84IPkIzpVAqNo1haD3fw4e6oItMriCfZIoZpntoiCVKKw0pw4jXs9XTk8mrQ3GlzjFsDBIjpbuSYayXmG1A/3+bAl7GIwBaZUGg1tBwIwNVtI4qC63cQOVM05/q3CdSca4IUcAUUZlfmMRqH6eQ=\",\n        \"key\": \"cfmuqLGr0pl2t6714Ag5UGUrYk3bggcc\",\n        \"expires_at\": \"2025-05-27T18:08:38.439Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Profile with game stats",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NLSHYzq9IogLTVncjxDJubIxQwwa0HcdrY+wh4982lkqjZdtBToBwLeKvINEWaALwfa1K3+8Dxilt7mlhV8wYnh+UylbRqbrtl2RxgVj5oc+XHDXKyaEQsMdDDwDPiA91lXeFg0pznzmeMjqIUT8VY/iwRZk1KTEATPSRUYk21sKdFmgUMMuN1AfFP9TAO8ahe0UJH73P8ajYjvHVTy5Iv/dT/y6dDo447u3p3SKs8jy6fHLYQ31UvfLcF7PExjXmPrVRFvW1PhnEg4wqnhzrbuNwCnP6PKmheoaQGGUBZY=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/user/profile",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"user",
+						"profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Profile with game stats",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/user/profile",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"user",
+								"profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2680"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a78-GT4MH6CeQLE/wyaS/hwtJIZdvrs\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 May 2025 18:58:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"code\": 200,\n    \"message\": \"User profile fetched successfully\",\n    \"data\": {\n        \"id\": 5,\n        \"email\": \"abc@gmail.com\",\n        \"created_at\": \"2025-05-26T18:08:38.000Z\",\n        \"updated_at\": \"2025-05-26T18:08:38.000Z\",\n        \"user_wallet\": {\n            \"id\": 5,\n            \"balance\": \"1530.05\",\n            \"created_at\": \"2025-05-26T18:08:38.000Z\",\n            \"updated_at\": \"2025-05-26T18:50:08.000Z\"\n        },\n        \"gameStats\": {\n            \"overview\": {\n                \"totalBets\": 1,\n                \"completedBets\": 1,\n                \"wonBets\": 1,\n                \"lostBets\": 0,\n                \"pendingBets\": 0,\n                \"winRate\": 100,\n                \"totalWagered\": 30,\n                \"totalWon\": 60,\n                \"netProfit\": 30,\n                \"roi\": 100\n            },\n            \"betOptions\": {\n                \"up\": {\n                    \"total\": 1,\n                    \"won\": 1,\n                    \"winRate\": 100\n                },\n                \"down\": {\n                    \"total\": 0,\n                    \"won\": 0,\n                    \"winRate\": 0\n                },\n                \"exact\": {\n                    \"total\": 0,\n                    \"won\": 0,\n                    \"winRate\": 0\n                }\n            },\n            \"diceStats\": {\n                \"mostCommon\": {\n                    \"dice1\": 6,\n                    \"dice2\": 2,\n                    \"total\": 8\n                },\n                \"frequency\": {\n                    \"dice1\": [\n                        0,\n                        0,\n                        0,\n                        0,\n                        0,\n                        1\n                    ],\n                    \"dice2\": [\n                        0,\n                        1,\n                        0,\n                        0,\n                        0,\n                        0\n                    ],\n                    \"total\": [\n                        0,\n                        0,\n                        0,\n                        0,\n                        0,\n                        0,\n                        1,\n                        0,\n                        0,\n                        0,\n                        0\n                    ]\n                }\n            },\n            \"streaks\": {\n                \"current\": 1,\n                \"longestWin\": 1,\n                \"longestLose\": 0\n            },\n            \"averages\": {\n                \"betAmount\": 30,\n                \"payout\": 60\n            }\n        },\n        \"recentActivity\": {\n            \"bets\": [\n                {\n                    \"id\": 1,\n                    \"user_id\": 5,\n                    \"amount\": \"30.00\",\n                    \"bet_option\": \"UP\",\n                    \"status\": \"WON\",\n                    \"payout\": 60,\n                    \"created_at\": \"2025-05-26T18:39:01.000Z\",\n                    \"updated_at\": \"2025-05-26T18:50:08.000Z\",\n                    \"deleted_at\": null,\n                    \"bet_game\": {\n                        \"id\": 1,\n                        \"dice1\": 6,\n                        \"dice2\": 2,\n                        \"total\": 8,\n                        \"result\": \"UP\",\n                        \"created_at\": \"2025-05-26T18:50:08.000Z\"\n                    }\n                }\n            ],\n            \"transactions\": [\n                {\n                    \"id\": 14,\n                    \"type\": \"CREDIT\",\n                    \"amount\": \"60.00\",\n                    \"reason\": \"BET_WIN\",\n                    \"prev_balance\": \"1470.05\",\n                    \"new_balance\": \"1530.05\",\n                    \"created_at\": \"2025-05-26T18:50:08.000Z\"\n                },\n                {\n                    \"id\": 13,\n                    \"type\": \"DEBIT\",\n                    \"amount\": \"30.00\",\n                    \"reason\": \"PLACE_BET\",\n                    \"prev_balance\": \"1500.05\",\n                    \"new_balance\": \"1470.05\",\n                    \"created_at\": \"2025-05-26T18:39:01.000Z\"\n                },\n                {\n                    \"id\": 12,\n                    \"type\": \"CREDIT\",\n                    \"amount\": \"500.00\",\n                    \"reason\": \"BONUS\",\n                    \"prev_balance\": \"1000.05\",\n                    \"new_balance\": \"1000.06\",\n                    \"created_at\": \"2025-05-26T18:14:19.000Z\"\n                },\n                {\n                    \"id\": 11,\n                    \"type\": \"CREDIT\",\n                    \"amount\": \"500.00\",\n                    \"reason\": \"BONUS\",\n                    \"prev_balance\": \"500.05\",\n                    \"new_balance\": \"500.06\",\n                    \"created_at\": \"2025-05-26T18:14:16.000Z\"\n                },\n                {\n                    \"id\": 10,\n                    \"type\": \"CREDIT\",\n                    \"amount\": \"500.00\",\n                    \"reason\": \"BONUS\",\n                    \"prev_balance\": \"500.04\",\n                    \"new_balance\": \"500.05\",\n                    \"created_at\": \"2025-05-26T18:13:20.000Z\"\n                },\n                {\n                    \"id\": 9,\n                    \"type\": \"CREDIT\",\n                    \"amount\": \"500.00\",\n                    \"reason\": \"BONUS\",\n                    \"prev_balance\": \"500.03\",\n                    \"new_balance\": \"500.04\",\n                    \"created_at\": \"2025-05-26T18:12:28.000Z\"\n                },\n                {\n                    \"id\": 8,\n                    \"type\": \"CREDIT\",\n                    \"amount\": \"500.00\",\n                    \"reason\": \"BONUS\",\n                    \"prev_balance\": \"500.02\",\n                    \"new_balance\": \"500.03\",\n                    \"created_at\": \"2025-05-26T18:09:14.000Z\"\n                },\n                {\n                    \"id\": 7,\n                    \"type\": \"CREDIT\",\n                    \"amount\": \"500.00\",\n                    \"reason\": \"BONUS\",\n                    \"prev_balance\": \"500.01\",\n                    \"new_balance\": \"500.02\",\n                    \"created_at\": \"2025-05-26T18:09:12.000Z\"\n                },\n                {\n                    \"id\": 6,\n                    \"type\": \"CREDIT\",\n                    \"amount\": \"500.00\",\n                    \"reason\": \"BONUS\",\n                    \"prev_balance\": \"500.00\",\n                    \"new_balance\": \"500.01\",\n                    \"created_at\": \"2025-05-26T18:09:05.000Z\"\n                },\n                {\n                    \"id\": 5,\n                    \"type\": \"CREDIT\",\n                    \"amount\": \"500.00\",\n                    \"reason\": \"BONUS\",\n                    \"prev_balance\": \"0.00\",\n                    \"new_balance\": \"500.00\",\n                    \"created_at\": \"2025-05-26T18:08:38.000Z\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Place bet",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NLSHYzq9IogLTVncjxDJubIxQwwa0HcdrY+wh4982lkqjZdtBToBwLeKvINEWaALwfa1K3+8Dxilt7mlhV8wYnh+UylbRqbrtl2RxgVj5oc+XHDXKyaEQsMdDDwDPiA91lXeFg0pznzmeMjqIUT8VY/iwRZk1KTEATPSRUYk21sKdFmgUMMuN1AfFP9TAO8ahe0UJH73P8ajYjvHVTy5Iv/dT/y6dDo447u3p3SKs8jy6fHLYQ31UvfLcF7PExjXmPrVRFvW1PhnEg4wqnhzrbuNwCnP6PKmheoaQGGUBZY=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "amount",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "bet_option",
+							"value": "UP",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/bet/place",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"bet",
+						"place"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Place bet",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "amount",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "bet_option",
+									"value": "UP",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/bet/place",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"bet",
+								"place"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "374"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"176-/wRhmsMUdgkcSk1CtL8JD5f+gYI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 May 2025 18:39:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"code\": 201,\n    \"message\": \"Bet placed successfully\",\n    \"data\": {\n        \"bet\": {\n            \"id\": 1,\n            \"user_id\": 5,\n            \"amount\": \"30.00\",\n            \"bet_option\": \"UP\",\n            \"status\": \"PENDING\",\n            \"payout\": 0,\n            \"created_at\": \"2025-05-26T18:39:01.000Z\",\n            \"updated_at\": \"2025-05-26T18:39:01.000Z\",\n            \"deleted_at\": null,\n            \"bet_user\": {\n                \"id\": 5,\n                \"email\": \"abc@gmail.com\"\n            }\n        },\n        \"wallet\": {\n            \"previous_balance\": 1500.05,\n            \"current_balance\": 1470.05\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Roll dice",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "NLSHYzq9IogLTVncjxDJubIxQwwa0HcdrY+wh4982lkqjZdtBToBwLeKvINEWaALwfa1K3+8Dxilt7mlhV8wYnh+UylbRqbrtl2RxgVj5oc+XHDXKyaEQsMdDDwDPiA91lXeFg0pznzmeMjqIUT8VY/iwRZk1KTEATPSRUYk21sKdFmgUMMuN1AfFP9TAO8ahe0UJH73P8ajYjvHVTy5Iv/dT/y6dDo447u3p3SKs8jy6fHLYQ31UvfLcF7PExjXmPrVRFvW1PhnEg4wqnhzrbuNwCnP6PKmheoaQGGUBZY=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "bet_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/bet/roll",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"bet",
+						"roll"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Roll dice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bet_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/bet/roll",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"bet",
+								"roll"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "545"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"221-VDLLm51ThlkLTSOSfn8hl9F9B+E\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 May 2025 18:50:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"code\": 200,\n    \"message\": \"Congratulations! You won 60 coins!\",\n    \"data\": {\n        \"bet\": {\n            \"id\": 1,\n            \"user_id\": 5,\n            \"amount\": \"30.00\",\n            \"bet_option\": \"UP\",\n            \"status\": \"WON\",\n            \"payout\": 60,\n            \"created_at\": \"2025-05-26T18:39:01.000Z\",\n            \"updated_at\": \"2025-05-26T18:50:08.000Z\",\n            \"deleted_at\": null,\n            \"bet_game\": {\n                \"id\": 1,\n                \"dice1\": 6,\n                \"dice2\": 2,\n                \"total\": 8,\n                \"result\": \"UP\",\n                \"created_at\": \"2025-05-26T18:50:08.000Z\"\n            },\n            \"bet_user\": {\n                \"id\": 5,\n                \"email\": \"abc@gmail.com\"\n            }\n        },\n        \"game\": {\n            \"dice1\": 6,\n            \"dice2\": 2,\n            \"total\": 8,\n            \"result\": \"UP\"\n        },\n        \"outcome\": {\n            \"status\": \"WON\",\n            \"payout\": 60\n        },\n        \"wallet\": {\n            \"balance\": \"1530.05\"\n        }\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:3000/api",
+			"type": "string"
+		}
+	]
+}

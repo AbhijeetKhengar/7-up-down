@@ -76,7 +76,7 @@ DB_SYNC_FORCE=false  # DANGER: This will drop tables!
 SQL_LOGGING=false
 
 # Encryption
-ENCRYPTION=true
+ENCRYPTION=false
 KEY=1cUYmFcGr1dgoPOEGqkrLDS7XvydoJ4t
 IV=FSqFKHJBBqGwlKJM
 ```
@@ -96,3 +96,5 @@ npm install
 ```bash
 yarn run local
 ```
+
+#### For Documentation, I've added postman collection to the root directory of the project
