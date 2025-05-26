@@ -1,0 +1,41 @@
+{
+  "auth": {
+    "invalidSession": "Invalid session",
+    "invalidToken": "Invalid token",
+    "sessionExpired": "Session expired",
+    "noToken": "Token not found",
+    "unauthorized": "Unauthorized",
+    "logoutSuccess": "Logout successfully",
+    "rateLimitExceeded": "Rate limit exceeded. Too many requests.",
+    "tooManyLoginAttempts": "Too many login attempts. Please try again later.",
+    "tooManyBets": "Betting too quickly. Please slow down.",
+    "tooManyDiceRolls": "Rolling dice too quickly. Please slow down."
+  },
+  "common": {
+    "internalServerError": "Something went wrong, please try again after some time"
+  },
+  "user": {
+    "loginSuccess": "User logged in successfully!",
+    "notExist": "User not exists!",
+    "profileFetched": "User profile fetched successfully",
+    "invalidPassword": "Invalid password",
+    "loginError": "Error logging in user.",
+    "invalidIdFormat": "Invalid user ID format"
+  },
+  "wallet": {
+    "notFound": "Wallet not found for this user",
+    "insufficientBalance": "Insufficient balance to place this bet"
+  },
+  "bet": {
+    "placedSuccess": "Bet placed successfully",
+    "notFound": "Bet not found",
+    "alreadyResolved": "This bet has already been resolved",
+    "diceAlreadyRolled": "Dice have already been rolled for this bet",
+    "notOwnBet": "You can only roll dice for your own bets",
+    "wonMessage": "Congratulations! You won {amount} coins!",
+    "lostMessage": "Better luck next time!"
+  },
+  "router": {
+    "invalidRoute": "Route not found"
+  }
+}
