@@ -98,3 +98,5 @@ yarn run local
 ```
 
 #### For Documentation, I've added postman collection to the root directory of the project
+
+#### For better understanding the database, I've added db diagram image to the root directory of the project
